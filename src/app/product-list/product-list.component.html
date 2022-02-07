@@ -1,0 +1,17 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <!-- [class.darkTheme]="setMode" -->
+  <!-- https://stackoverflow.com/questions/62108585/how-to-toggle-dark-theme-in-angular-when-i-click-on-the-switch -->
+  <h3 class="design">
+    <a [title]="product.name + ' details'" href="www.google.com">
+      {{ product.name }}
+    </a>
+  </h3>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
